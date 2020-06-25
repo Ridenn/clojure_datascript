@@ -1,5 +1,5 @@
-(ns datascript-estudo.core)
-(require '[datascript.core :as d])
+(ns datascript-estudo.core
+  (require '[datascript.core :as d]))
 
 (let [schema {:aka {:db/cardinality :db.cardinality/many}}
         conn   (d/create-conn schema)]
